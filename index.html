@@ -1,37 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Images URL</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
-<style>
-    img {
-        width: 32%;
-    }
 
-    #images-container {
-        display:flex;
-        flex-direction: row;
-        flex-wrap:wrap;
-        gap: 10px;
-    }
-</style>
 
 <body>
-    
+
     <div class="text-center mt-4 ">
         <label class="font-bold" for="input">Search URL: </label>
         <input class="p-2" id="input" type="text">
     </div>
-    
+
     <div id="images-container"></div>
 
     <template id="image-template">
+        <div id="box">
             <img src="" alt="images">
+        </div>
     </template>
 
 </body>
-    <script src="./app.js"></script>
+<script src="./app.js"></script>
+
 </html>
